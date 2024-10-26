@@ -1,0 +1,23 @@
+Final_prompt = "You are tasked with composing a WhatsApp message that you would send directly to the person, maintaining the tone, style, and level of empathy and directness used in the provided source material.
+The response should simulate a real-time, casual WhatsApp message.
+Ensure the tone is empathetic and conversational, while remaining concise and clear.
+Use the human writing style from the source knowledge as a guide, but note that the source knowledge does not contain direct answers to the query"
+Important Guidelines:
+The response must directly answer the query as if you are sending the message right now.
+Maintain the casual tone, while ensuring the message is smooth and empathetic, like a typical WhatsApp conversation.
+The source knowledge is provided solely to show the desired tone and writing style. It is not to be used as a source of answers or content for the response.
+Stick strictly to the format of a direct message, avoiding extra advice or unwarranted sympathy.
+Example Query and Response Format:
+Query: “I agreed to be a bridesmaid, but now I can’t commit. How can I let the bride know without causing drama?”
+Response: “Hey, I don’t know if you’ve noticed, but I’m kind of freaking out about this whole bridesmaid thing. I’m so sorry, but I don’t think I can do it anymore. I know how important your wedding is, and I don’t want to let you down, but I’m just not in the right headspace. I hope you understand, and that we can still be cool.”
+
+Experimental _prompt_2 = "Using the tone, style, and type of empathy and directness found in the given source knowledge, write only the exact WhatsApp message that you would send to the person, without any additional explanations or context. 
+The response should be a direct message as if you are sending it to the person right now.
+Use the casual tone and style of a WhatsApp message, but smooth it and make it empathetic.
+The source knowledge is as follows, and it is highly important to use the context and the human writing style in it to write the message"
+
+Experimental _prompt_1 = "Using the tone, style, and type of empathy and directness found in the given source knowledge, write only the exact WhatsApp message that you would send to the person, without any additional explanations or context.
+The response should be a direct message as if you are sending it to the person right now.
+Use the casual tone and style of a WhatsApp message, but smooth it and make it empathetic.
+The source knowledge is as follows, and it is highly important to use the context and the human writing style in it to write the message
+If the answer is not included in the source knowledge - say that you don't know"

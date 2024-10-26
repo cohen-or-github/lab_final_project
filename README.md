@@ -1,1 +1,28 @@
-# lab_final_project
+# Empathetic Chatbot for WhatsApp Message Generation
+
+This project focuses on building a system that generates empathetic WhatsApp messages for users dealing with unpleasant situations. We developed a chatbot using **Retrieval-Augmented Generation (RAG)** and compared its performance to state-of-the-art models like GPT-4 and Claude 3.5 to ensure the highest quality responses in terms of empathy, relevance, and clarity.
+
+## Project Overview
+
+The project aims to create a chatbot capable of generating emotionally sensitive and contextually appropriate WhatsApp messages. We followed a structured approach to build and optimize the chatbot:
+
+1. **RAG Configuration Selection**: 
+   - We examined three datasets: **Google_Emotions**, **Reddit_Relationship_Advice**, and the **Friends TV Show Scripts**.
+   - Two embedding methods were tested: **microsoft/deberta-base** and **all-MiniLM-L6-v2**.
+   - After running five queries across six combinations of datasets and embeddings, we determined that **Friends TV Show Scripts** with **all-MiniLM-L6-v2** was the best configuration for our pipeline.
+
+2. **Model Comparison**:
+   - We compared 200 sensitive WhatsApp message queries between our optimized RAG model, **GPT-4**, and **Claude 3.5**.
+   - Each model was evaluated on the following three metrics:
+     1. **Human-like Rate**: How natural and human-like the responses are.
+     2. **Response Relevance Rate**: How well the responses match the context of the query.
+     3. **Clarity & Coherence**: How clear and coherent the responses are.
+   
+   See [annotation guidelines](#annotation-guidelines) for further explanation of these metrics.
+
+3. **Chatbot Implementation**:
+   - The final RAG model, based on the **Friends TV Show Scripts**, was implemented into a chatbot.
+   - Users can interact with the chatbot, asking for advice or messages tailored to unpleasant situations.
+   
+![image](https://github.com/user-attachments/assets/54609f53-689f-4edd-bc54-48b9890206ca)
+

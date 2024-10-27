@@ -34,6 +34,21 @@ The six variations are as follows:
 5. Friends TV Show Scripts with microsoft/deberta-base
 6. Friends TV Show Scripts with all-MiniLM-L6-v2
 
+## Files Explanation
+
+- **Dataset_Embeddings.py**: This script is responsible for creating embeddings for all the experimental datasets. It ensures the embeddings are generated using the selected models (microsoft/deberta-base and all-MiniLM-L6-v2) so they can be used in further comparisons.
+
+- **Experimental_prompts**: A file containing the prompts we used to test the RAG pipeline. These prompts are designed to simulate real-world WhatsApp message requests and serve as the basis for evaluating the model's ability to generate empathetic responses.
+
+- **RAG_Pipeline.ipynb**: This Jupyter notebook contains the core code where we examine the best source knowledge (datasets) and embedding methods. It also includes the final results after selecting the best combination for generating empathetic WhatsApp messages.
+
+- **Queries_data_sets**: This file contains two sets of queries:
+  1. The five queries used during the initial experimental phase to test different embedding and dataset combinations.
+  2. The 200 sensitive queries used for the final evaluation between our RAG model, GPT-4, and Claude 3.5.
+
+
+
+
 ## Results
 
 Through this experimentation, we aimed to identify the best combination of embedding method and dataset. Ultimately, the best results came from the **Friends TV Show Scripts** using **all-MiniLM-L6-v2**. This combination provided the most emotionally appropriate and contextually aware responses for generating empathetic WhatsApp messages.

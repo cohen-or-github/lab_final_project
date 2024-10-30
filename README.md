@@ -50,12 +50,14 @@ The project aims to create a chatbot capable of generating emotionally sensitive
       - Set `INDEX_NAME` according to the relevant dimensions:
         - Use `384` for embeddings generated with **all-MiniLM-L6-v2**.
 
-   2. Make sure you have installed Streamlit dependencies (pip install streamlit) and SentenceTransformer.
+   2. **Streamlit Installation**
+       Make sure you have installed Streamlit dependencies (pip install streamlit) and SentenceTransformer.
        
-   2. Navigate to the folder the streamlit app files are located in, and run the following command in the terminal: "streamlit run streamlit_akward_app.py"
+   2. **Run App**
+      Navigate to the folder the streamlit app files are located in, and run the following command in the terminal: "streamlit run streamlit_akward_app.py"
       This will run the app on a local server.
 
-   3. Open the local server link printed in your terminal in your browser. Enjoy!
+   4. Open the local server link printed in your terminal in your browser. Enjoy!
 
    
 ![image](https://github.com/user-attachments/assets/54609f53-689f-4edd-bc54-48b9890206ca)

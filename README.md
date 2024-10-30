@@ -24,7 +24,7 @@ The project aims to create a chatbot capable of generating emotionally sensitive
    - The final RAG model, based on the **Friends TV Show Scripts**, was implemented into a chatbot.
    - Users can interact with the chatbot, asking for advice or messages tailored to unpleasant situations.
 
-## How to Run
+## How to Run Source Code
 
 1. **Download the Cleaned Preprocessed Datasets**:
    - Ensure the cleaned datasets are available in the `/preprocess/clean_datasets` directory. These datasets will be used to create embeddings for the RAG pipeline.
@@ -43,6 +43,20 @@ The project aims to create a chatbot capable of generating emotionally sensitive
    - Set `INDEX_NAME` according to the relevant dimensions:
      - Use `384` for embeddings generated with **all-MiniLM-L6-v2**.
      - Use `768` for embeddings generated with **microsoft/deberta-base**.
+
+## How do run chat-bot via Streamlit app
+   1. **API Keys and Index Name Configuration**:
+      - Before running the app, make sure to replace the placeholders for `pinecone_api_key.txt` and `cohere_api_key.txt` in lab_final_project/streamlit/ with your own keys.
+      - Set `INDEX_NAME` according to the relevant dimensions:
+        - Use `384` for embeddings generated with **all-MiniLM-L6-v2**.
+
+   2. Make sure you have installed Streamlit dependencies (pip install streamlit) and SentenceTransformer.
+       
+   2. Navigate to the folder the streamlit app files are located in, and run the following command in the terminal: "streamlit run streamlit_akward_app.py"
+      This will run the app on a local server.
+
+   3. Open the local server link printed in your terminal in your browser. Enjoy!
+
    
 ![image](https://github.com/user-attachments/assets/54609f53-689f-4edd-bc54-48b9890206ca)
 

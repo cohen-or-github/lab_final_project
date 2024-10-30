@@ -164,7 +164,7 @@ with col1:
 
 # Main content in the second column
 with col2:
-    st.markdown("<h3 class='title'>What's the awkward message of the day? 😳</h3>", unsafe_allow_html=True)
+    st.image("title.jpg", use_column_width=True)
     query3 = st.text_area("", value="")
 
     # Center the button and spinner within the form container

@@ -23,6 +23,26 @@ The project aims to create a chatbot capable of generating emotionally sensitive
 3. **Chatbot Implementation**:
    - The final RAG model, based on the **Friends TV Show Scripts**, was implemented into a chatbot.
    - Users can interact with the chatbot, asking for advice or messages tailored to unpleasant situations.
+
+## How to Run
+
+1. **Download the Cleaned Preprocessed Datasets**:
+   - Ensure the cleaned datasets are available in the `/preprocess/clean_datasets` directory. These datasets will be used to create embeddings for the RAG pipeline.
+
+2. **Generate Embeddings for the Datasets**:
+   - Run the `Dataset_Embeddings.py` script on the `clean_datasets` directory. This script will create embeddings based on the experimental datasets, using the specified embedding methods (either microsoft/deberta-base or all-MiniLM-L6-v2).
+
+3. **Run the RAG Pipeline**:
+   - Open and execute the `RAG_Pipeline.ipynb` notebook.
+   - This notebook allows you to:
+     - Evaluate the performance of each dataset and embedding combination.
+     - Run the final selected configuration as a knowledge base for generating responses to the 200 test queries.
+
+4. **API Keys and Index Name Configuration**:
+   - Before running `RAG_Pipeline.ipynb`, make sure to replace the placeholders for `COHERE_API_KEY` and `PINECONE_API_KEY` with your own keys.
+   - Set `INDEX_NAME` according to the relevant dimensions:
+     - Use `384` for embeddings generated with **all-MiniLM-L6-v2**.
+     - Use `768` for embeddings generated with **microsoft/deberta-base**.
    
 ![image](https://github.com/user-attachments/assets/54609f53-689f-4edd-bc54-48b9890206ca)
 
